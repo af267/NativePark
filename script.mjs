@@ -110,7 +110,7 @@ function init() {
   scene.add( cube );
   
   var gltfLoader = new GLTFLoader();
-  gltfLoader.setPath('/');
+  gltfLoader.setPath('/NativePark/');
   gltfLoader.load('structure.glb', function(gltf){
     gltf.scene.traverse( function ( object ) {
         if ( object.isMesh ) {
