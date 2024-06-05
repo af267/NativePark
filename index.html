@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The NativePark</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="icon.png" />
+  <style>
+    header {
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .b {
+      position: fixed;
+      left: 10px;
+      width: 180px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border: 2px solid white;
+      border-radius: 4px;
+    }
+
+    .b:hover {
+      width: 200px;
+    }
+
+    #b1 {
+      top: 110px;
+    }
+
+    #b2 {
+      top: 180px;
+    }
+
+    #b3 {
+      top: 250px;
+    }
+
+    #b4 {
+      top: 320px;
+    }
+
+    #b5 {
+      top: 390px;
+    }
+
+    #b6 {
+      top: 460px;
+    }
+
+    #abtMain {
+      color: white;
+      overflow: hidden;
+      overflow-y: scroll;
+      margin: 0 auto;
+      margin-top: 10vh;
+      position: relative;
+      padding: 20px;
+      width: 80vw;
+      height: 75vh;
+      border: 2px solid white;
+      border-radius: 3px;
+    }
+
+    #abtMain::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    #abtMain::-webkit-scrollbar-track {
+      background: rgba(200, 200, 200, 0.4);
+    }
+
+    #abtMain::-webkit-scrollbar-thumb {
+      width: 10px;
+      background: rgba(50, 50, 50, 0.8);
+    }
+
+    #x:hover {
+      background-color: rgba(100, 100, 100, 0.5);
+    }
+  </style>
+</head>
+
+<body style="margin:0;padding:0;">
+  <script src="script.mjs" type="module"></script>
+  <header>
+    <div id="header" style="display:inline-block">
+      <nav>
+        <p style="font-size: 20px; display:inline-block">
+          <a href="credits.html" class="headerElement">
+            <h3 style="display:inline-block">Credits</h3>
+          </a>
+          &emsp;&emsp;
+          <a href="index.html">
+            <h1 id="title" style="display:inline-block">The NativePark</h1>
+          </a>
+          &emsp;&emsp;
+          <a onclick="statement()">
+            <h3 class="headerElement" style="display:inline-block">Curator's Statement</h3>
+          </a>
+        </p>
+      </nav>
+      </a>
+    </div>
+  </header>
+  <div id="b1" class="b" onclick="b1()">
+    <h2>Exhibit 1</h2>
+  </div>
+  <div id="b2" class="b" onclick="b2()">
+    <h2>Exhibit 2</h2>
+  </div>
+  <div id="b3" class="b" onclick="b3()">
+    <h2>Exhibit 3</h2>
+  </div>
+  <div id="b4" class="b" onclick="b4()">
+    <h2>Exhibit 4</h2>
+  </div>
+  <div id="b5" class="b" onclick="b5()">
+    <h2>Exhibit 5</h2>
+  </div>
+  <div id="b6" class="b" onclick="b6()">
+    <h2>Home</h2>
+  </div>
+  <div id="about"
+    style="display:block; position:fixed; top:0; width:100vw; height:100vw; background-color:rgba(0, 0, 0, 0.8)">
+    <div id="abtMain">
+      <h1>Curator's Statement</h1>
+      <p>The NativePark is my design for a contemporary museum park celebrating Native American culture. The museum
+        features a combination of modern and contemporary pieces as well as more traditional pieces to represent that
+        Native American culture isn't all just traditional and under the "noble savage" norm, and that there are many
+        more aspects to it. The architecture of the museum's main structure reflects the design of both a campfire and a
+        tipi, two significant and notable aspects of Native American culture. The modern glass design of the structure
+        represents modernity and present-day society, and the changes and struggles many Natives are facing as they try
+        to fit into society today.</p>
+      <h2 style="font-size:25px; color:white;">Tipi Bag</h2>
+      <p>Though not being a specific piece of art with a specific known artist, this traditional bag reflects upon the
+        history of the Native Americans and the influence from the settlers that they were put under. I decided to use
+        an anonymous artifact for the first exhibit because it represents the entirety of Natives as a whole. At the
+        same time, this piece represents not only just a specific person or a group of people, but part of the history
+        of our entire country.</p>
+      <p>I decided to use "The Theft Outright" (Heid R. Erdrich) to represent this specific piece of art because both
+        works show the influence of the American settlers upon the Natives. "The Theft Outright" explains the nature of
+        Manifest Destiny, how white settlers believed that the land was destined to be theirs, eventually leading to
+        them taking over Native land. The Tipi Bag shows that as the Americans began their expansion west, their
+        influence reached the Natives as seen with the American flags on the bag.</p>
+      <h2 style="font-size:25px; color:white;">Together</h2>
+      <p><b>Daphne Odjig</b> was an Odawa-Potawatomi artist who was known for her pictographic style paintings. Her
+        modern pieces focus on the importance of family, which is why I chose "My Father's Song" (Simon J. Ortiz) to
+        represent this piece. This specific poem and piece both reflect on the love and bonding between family. It
+        strays away from the idea of the "noble savage", showing that Native Americans are just like anyone else: loving
+        and caring for each other, and that there isn't anything savage about them.</p>
+      <h2 style="font-size:25px; color:white;">In-Appropriate #1</h2>
+      <p><b>Frank Buffalo Hyde</b> is an Onondaga artist who is known for combining aspects of modern culture with
+        Native American culture in his artwork. Many of his pieces, for example, "In-Appropriate #1", reflect on the
+        issues of modern society and traditional Native American culture. This issue is also highlighted in the poem
+        "Whereas My Eyes Land on the Shoreline" (Layli Long Soldier). Both pieces highlight the issue where modern
+        society meets Native American traditions, and how modern-day people with Native heritage respond to this.</p>
+      <h2 style="font-size:25px; color:white;">One November Morning</h2>
+      <p><b>Brent Learned</b> is a Cheyenne-Arapaho artist who is known to paint in a more rustic and traditional style.
+        I chose his work in the collection, "One November Morning", to highlight the violence that Native Americans
+        face. Though the painting depicts a massacre during the period of Manifest Destiny, violence towards Native
+        Americans occur to this day, as described in "American Arithmetic" (Natalie Diaz). As said by Diaz, Native
+        Americans make up 19% of all police killings, which is higher than that of any other race. Connecting back to
+        Learned's piece, it is shown that this violence has existed for a long time, and continues to exist without
+        people paying much attention to the need to fix it.</p>
+      <h2 style="font-size:25px; color:white;">enit</h2>
+      <p><b>Wendy Red Star</b> is a contemporary Apsáalooke artist known for her pieces featured in the Met, MoMA, and
+        many other known museums around the world. Her piece "enit" is done in a style which I feel fits well with the
+        idea of living one's life freely, which is why I connected this specific work to the poem "Advice to Myself"
+        (Louise Erdrich). I decided to end off the museum collection with this specific exhibit to show that Native
+        culture is not all traditions and how modern-society impacts a certain race, but can simply be the reflection of
+        one's own life. The poem Advice to Myself teaches the important lesson to freely allow your life to shape your
+        identity and not forcing your life in the way you want it to be.</p>
+      <div id="x" onclick="aboutHide()">
+        <h1 style="margin:0 auto">- CLOSE -</h1>
+      </div>
+    </div>
+  </div>
+  <script>
+    var aboutDiv = document.getElementById("about");
+    window.statement = () => {
+      aboutDiv.style.display = "block";
+      aboutDiv.scrollTop = aboutDiv.scrollHeight;
+    }
+    window.aboutHide = () => {
+      aboutDiv.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
